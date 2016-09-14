@@ -1,6 +1,20 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * Autoload magic function to load classes
+ */
+function __autoload($class){
+	if(strpos($class, "CI_") !== 0){
+
+		$lib = APPPATH . 'core/' . $class . '.php';
+
+		if(file_exists($lib) && is_readable($lib)){
+			include_once($lib);
+		}
+	}
+}
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

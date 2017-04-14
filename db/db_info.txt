@@ -1,0 +1,13 @@
+INSTRUCTIONS
+===============================================
+
+SYNOPSIS:
+- The base_db.sql file includes 'ci_sessions' table for storing session data &
+  ion_auth tables.
+
+- To import
+
+                  mysql -u root -p database_name < base_db.sql
+
+- Password is 'toor' (In case requested during importing)
+

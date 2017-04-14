@@ -1,0 +1,392 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
+/********************************************************************************************************************
+* Portfolio Website For EyobOfficial on Github
+*
+* Title:              Base CodeIgniter Template App
+* URL:                http://eyobofficial.github.io
+* Owner:              Eyob Tariku
+* Designer/Developer: Eyob Tariku
+* Email:              eyobtariku@gmail.com / eyobofficial@gmail.com
+* Github:             https://github.com/eyobofficial
+* Phone No.:          +251 911 427805
+* Description:
+*
+*********************************************************************************************************************/
+
+/**************** Color Menu ***********************
+
+
+
+******************************************************/
+
+/***************************** Helper Classes ****************************/
+.border-green {
+	border: 1px solid green;
+}
+
+
+.border-yellow {
+	border: 1px solid yellow;
+}
+
+
+.border-red {
+	border: 1px solid red;
+}
+
+.border-blue {
+	border: 1px solid blue;
+}
+
+.border-dotted {
+	border: 1px solid #efefef;
+}
+
+.height-xs {
+	min-height: 120px;
+}
+
+
+.height-sm {
+	min-height: 240px;
+}
+
+
+.height-md {
+	min-height: 480px;
+}
+
+
+.height-lg {
+	min-height: 640px;
+}
+
+
+.height-xlg {
+	min-height: 900px;
+}
+
+.text-fade {
+	color: #888;
+}
+
+
+.bold {
+	font-weight: bold !important;
+}
+
+.italic {
+	font-style: italic !important;
+}
+
+.fade, .shade {
+	color: silver !important;
+}
+
+.badge-primary {
+	background-color: #1ab394 !important;
+}
+
+.badge-info {
+	background-color: #23c6c8 !important;
+}
+
+.badge-warning {
+	background-color: #F0AD4E !important;
+}
+
+
+.badge-danger {
+	background-color: #d9534f !important;
+}
+
+
+body {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size: 13px;
+	line-height: 1.2em;
+	background: #efefef;
+	color: #676a6c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 10px;
+}
+h3,
+h4,
+h5 {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
+table, .table, th, td {
+	font: inherit !important;
+	font-size: 13px !important;
+}
+
+small, .small {
+    font-size: 85%;
+}
+
+
+a, a:visited {
+	text-decoration: none !important;
+	color: #23c6c8 !important;
+}
+
+
+a:hover {
+	color: #F0AD4E!important;
+	transition: all 0.2s;
+}
+
+/************** Default Buttons ********************************/
+
+.btn {
+	font-size: 12px !important;
+}
+
+.btn-success {
+	border-radius: 0 !important;
+	font-weight: bold;
+	background-color: #1ab394;
+	color: #fff;
+}
+
+
+a.btn-primary,
+.btn-primary {
+	border-radius: 2px !important;
+	font-weight: bold;
+	background-color: #1ab394 !important;
+	border: 1px solid #1ab394 !important;
+	color: #fff;
+}
+
+a.btn-primary-o
+.btn-primary-o {
+	border-radius: 2px !important;
+	font-weight: bold;
+	background-color: #1ab394 !important;
+	border: 1px solid #1ab394 !important;
+	color: #fff;
+}
+
+
+.btn-primary:hover {
+	background-color: #fff !important;
+	border: 1px solid #1ab394 !important;
+	color: #1ab394;
+	transition: all 0.4s;
+}
+
+
+.btn-primary-o:hover {
+	background-color: #fff !important;
+	border: 1px solid #1ab394 !important;
+	color: #1ab394;
+	transition: all 0.4s;
+}
+
+
+
+a.btn-warning,
+.btn-warning {
+	border-radius: 2px !important;
+	font-weight: bold;
+	background-color: #F0AD4E !important;
+	border: 1px solid #F0AD4E !important;
+	color: #fff;
+}
+
+
+.btn-warning:hover {
+	background-color: #fff !important;
+	border: 1px solid #F0AD4E !important;
+	color: #F0AD4E;
+	transition: all 0.4s;
+}
+
+
+
+a.btn-info,
+.btn-info {
+	border-radius: 2px !important;
+	font-weight: bold;
+	background-color:  #23c6c8 !important;
+	border: 1px solid  #23c6c8 !important;
+	color: #fff;
+}
+
+
+.btn-info:hover {
+	background-color: #fff !important;
+	border: 1px solid  #23c6c8 !important;
+	color:  #23c6c8;
+	transition: all 0.4s;
+}
+
+
+a.btn-danger, 
+.btn-danger {
+	border-radius: 2px !important;
+	font-weight: bold;
+	background-color:  #d9534f !important;
+	border: 1px solid  #d9534f !important;
+	color: #fff !important;
+}
+
+
+.btn-danger:hover {
+	background-color: #fff !important;
+	border: 1px solid  #d9534f !important;
+	color:  #d9534f !important;
+	transition: all 0.4s;
+}
+
+
+/********************** Default Margin & Padding Classes **************************/
+.breath-right-sm {
+	margin-right: 1.2em;
+}
+
+
+.breath-right-md {
+	margin-right: 2em;
+}
+
+.breath-right-lg {
+	margin-right: 2.6em;
+}
+
+
+.breath-left-sm {
+	margin-left: 1.2em;
+}
+
+
+.breath-left-md {
+	margin-left: 2em;
+}
+
+.breath-left-lg {
+	margin-left: 2.6em;
+}
+
+
+
+.breath-down-sm {
+	margin-bottom: 1.2em;
+}
+
+
+.breath-down-md {
+	margin-bottom: 2em;
+}
+
+.breath-down-lg {
+	margin-bottom: 2.6em;
+}
+
+.breath-up-sm {
+	margin-top: 1.2em;
+}
+
+
+.breath-up-md {
+	margin-top: 2em;
+}
+
+
+.breath-up-md {
+	margin-top: 2.6em;
+}
+
+.breath-both-sm {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}
+
+
+.breath-up-xs {
+	margin-top: 0.6em;
+}
+
+
+.breath-down-xs {
+	margin-bottom: 0.6em;
+}
+
+
+.breath-both-md {
+	margin-top: 2em !important;
+	margin-bottom: 2em;
+}
+
+
+.breath-both-lg {
+	margin-top: 2.6em;
+	margin-bottom: 2.6em;
+}
+
+
+
+.pad-down-sm {
+	padding-bottom: 1.2em;
+}
+
+
+
+.pad-down-md {
+	padding-bottom: 2em;
+}
+
+
+.pad-down-lg {
+	padding-bottom: 2.8em;
+}
+
+
+.pad-up-sm {
+	padding-top: 1.2em;
+}
+
+
+
+.pad-up-md {
+	padding-top: 2em !important;
+}
+
+
+.pad-up-lg {
+	padding-top: 2.8em;
+}
+
+
+.pad-left-md {
+	padding-left: 2.8em;
+}

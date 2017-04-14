@@ -63,23 +63,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
+	
+	dd {
+		
+	}
+
 	</style>
 </head>
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1><strong>Welcome To MY CodeIgniter Template</strong></h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+		<h2 class="h4">Check if install &amp; setup was successfull:</h2>
+		<ul>
+			<li><strong>Website Name:</strong> <?php echo ucwords($website_name); ?></li>
+			<li><strong>Website Author:</strong> <?php echo ucwords($website_author); ?></li>
+			<li><strong>Author Email:</strong> <?php echo strtolower($author_email); ?></li>
+			<li><strong>Description:</strong> <?php echo ucwords($website_description); ?></li>
+		</ul>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<h2 class="h4">To Start Editing the Website, follow the following steps: </h2>
+		<ol>
+			<li>Edit custom config file from the application/config/custom_config.php file</li>
+			<li>Create a database and import the base_db.sql from db/base_db.sql</li>
+			<li>Load your newly created database in the application/database.php file</li>
+			<li>Load Sessions in the application/autoload.php</li>
+		</ol>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+
+		<h2>Thank you!</small></h2>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>

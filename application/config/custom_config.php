@@ -10,7 +10,7 @@
 /**
  * Website Name
  */
-$config['website_name'] = 'No Name Yet';
+$config['website_name'] = 'App Title';
 
 
 
@@ -31,4 +31,4 @@ $config['author_email'] = 'eyobtariku@gmail.com';
 /**
  * Website Description
  */
-$config['website_description'] = 'No description yet...';
+$config['website_description'] = 'App description...';

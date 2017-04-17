@@ -32,8 +32,7 @@ class MY_Controller extends CI_Controller {
 
 
 
-	public function render($main_view, $template = "default_template_view"){
-		$this->data['main_view'] = $main_view;
+	public function render($template = "default_template_view"){
 		$this->load->view($template, $this->data);
 	}
 
